@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Product = require('../models/Product');
-const { protect, admin } = require('../middleware/authMiddleware');
+const { protect, admin } = require('../middleware/authMiddleware'); // yeh import sahi hona chahiye
 
 // GET /api/products - public
 router.get('/', async (req, res) => {

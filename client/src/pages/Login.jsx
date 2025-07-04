@@ -22,7 +22,7 @@ const Login = () => {
       });
 
       login(res.data.user); // or save token
-      navigate('/cart');
+      navigate('/ProductList');
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed');
     }
